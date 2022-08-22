@@ -9,7 +9,7 @@
 
 - 👨‍💻 All of my projects are available at [https://github.com/lindsayevanslee](https://github.com/lindsayevanslee)
 
-- 📫 How to reach me **me@lindsayevanslee.com**
+- 📫 Reach me at **me@lindsayevanslee.com**
 
 - 📄 Check out my CV [https://www.lindsayevanslee.com/resume](https://www.lindsayevanslee.com/resume)
 
