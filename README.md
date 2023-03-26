@@ -7,7 +7,7 @@
 
 - 🌱 I’m currently learning **Javascript, D3, and font design**
 
-- 👨‍💻 See what I'm working on at [lindsay.codes](lindsay.codes) or [https://github.com/lindsayevanslee](https://github.com/lindsayevanslee)
+- 👨‍💻 See what I'm working on at [lindsay.codes](https://lindsay.codes) or [https://github.com/lindsayevanslee](https://github.com/lindsayevanslee)
 
 - 📫 Reach me at **me@lindsayevanslee.com**
 
