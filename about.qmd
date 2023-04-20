@@ -1,0 +1,27 @@
+---
+title: "About"
+image: me.jpeg
+image-alt: A white woman with brown hair pulled back, in a green patterned dress and beige cardigan, sitting in a wheelchair, smiling like she loves having a headshot taken
+about:
+  template: solana
+  links:
+    - icon: link
+      text: Website
+      href: https://lindsay.codes
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/lindsayevanslee
+    - icon: github
+      text: Github
+      href: https://github.com/lindsayevanslee
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/lindsayevanslee
+    - icon: envelope-at-fill
+      text: Email
+      href: mailto:me@lindsayevanslee.com
+---
+
+I am currently the Lead Analytics Solutions Architect at St. Jude Children’s Research Hospital, based remotely out of Nashville, Tennessee. I completed my Master of Public Policy and MSc in Applied Statistics at the University of Oxford as a Rhodes Scholar. I graduated with a B.S. in Mathematics from the University of Tennessee, Knoxville. There I also majored in Spanish and minored in Portuguese. I previously worked as a Technical Officer at the World Health Organization, serving as a focal point for all technical aspects related to disability across the global organization, and as a Senior Healthcare Data Analyst/Technical Lead at Embold Health, a Nashville-based healthcare data start-up focused on improving care through objective quality measurement of physicians.
+
+At St. Jude, I partner with colleagues across the institution to look for new ways to enhance, develop or execute data-driven solutions and insights through the use of analytics, particularly focused on increasing self-sufficiency for our customers. In all projects, I bring this analytical way of thinking cultivated since a young age: breaking problems into their component parts, identifying the tools available to solve them, strategizing the optimal way forward.

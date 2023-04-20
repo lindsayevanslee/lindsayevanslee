@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "Welcome to my site! I am currently the Lead Analytics Solutions Architect at St. Jude Children’s Research Hospital. I completed my Master of Public Policy and MSc in Applied Statistics at the University of Oxford as a Rhodes Scholar. My primary professional experiences involve mathematical analysis in public health, public policy and law. Ultimately, I am most interested in the power of mathematics to analyze and advocate for public policies that benefit the most marginalized among us."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I am currently the Lead Analytics Solutions Architect at St. Jude Children’s Research Hospital, based remotely out of Nashville, Tennessee. I completed my Master of Public Policy and MSc in Applied Statistics at the University of Oxford as a Rhodes Scholar. I graduated with a B.S. in Mathematics from the University of Tennessee, Knoxville. There I also majored in Spanish and minored in Portuguese. I previously worked as a Technical Officer at the World Health Organization, serving as a focal point for all technical aspects related to disability across the global organization, and as a Senior Healthcare Data Analyst/Technical Lead at Embold Health, a Nashville-based healthcare data start-up focused on improving care through objective quality measurement of physicians.\nAt St. Jude, I partner with colleagues across the institution to look for new ways to enhance, develop or execute data-driven solutions and insights through the use of analytics, particularly focused on increasing self-sufficiency for our customers. In all projects, I bring this analytical way of thinking cultivated since a young age: breaking problems into their component parts, identifying the tools available to solve them, strategizing the optimal way forward."
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "CV",
+    "section": "",
+    "text": "Download my CV here:"
+  }
+]

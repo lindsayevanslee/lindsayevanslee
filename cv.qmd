@@ -1,0 +1,46 @@
+---
+title: "CV"
+---
+
+Download my CV here: 
+
+::: {.download_btn}
+
+```{css}
+#| echo: false
+
+.btn-default,
+.btn-default:hover,
+.btn-default:active {
+  font-size: 24px;
+  padding: 0px;
+  margin-top: -5px;
+  color: black;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.btn-default:hover {
+  color: gray;
+  transition: 0.2s;
+}
+
+```
+
+
+```{r}
+#| echo: false
+
+library(downloadthis)
+
+download_file(
+  path = "Lindsay Lee cv 2023-03-25.pdf",
+  output_name = "Lindsay Lee cv 2023-03-25",
+  button_label = "",
+  button_type = "default",
+  has_icon = TRUE,
+  icon = "fa fa-file-pdf"
+)
+```
+
+:::

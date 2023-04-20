@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "lindsayevanslee.com"
+  description: "Lindsay Lee's website"
+  favicon: "favicon.png"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - cv.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    header-includes: <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    mainfont: Roboto
+
+editor: visual
+
