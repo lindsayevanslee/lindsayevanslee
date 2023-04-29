@@ -6,7 +6,7 @@ date: "2017-08-04"
 # image-alt: "Winking emoji in a medieval style, hand drawn by the author"
 categories: [map, accessibility]
 aliases: 
-  - https://lindsayevanslee.github.io/lindsayevanslee/blog/2017/8/4/geneva-switzerland-accessibility-map
+  - ../../blog/2017/8/4/geneva-switzerland-accessibility-map
 ---
 
 A necessary, slow and frustrating part of moving to a new place for me is figuring out where I can and can't go with my wheelchair. For my own reference I put information as I gather it into these custom Google maps. I wanted to link to it here in case it is ever useful for anyone else.
