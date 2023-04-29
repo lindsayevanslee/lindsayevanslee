@@ -12,6 +12,9 @@ website:
         text: Home
       - about.qmd
       - cv.qmd
+      - research.qmd
+      - writing.qmd
+      - news.qmd
 
 format:
   html:
