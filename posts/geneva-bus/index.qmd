@@ -1,0 +1,142 @@
+---
+title: "How can I get Geneva bus drivers to stop forgetting to let me off the bus?"
+description: "Trying to find an answer with obsessive data collection"
+date: "2018-10-21"
+image: https://www.intelligenttransport.com/wp-content/uploads/After-a-decade-of-growth-Geneva-now-concentrates-on-improving-service-quality.jpg
+image-alt: "A side view of a bus in front of the United Nations Office at Geneva"
+categories: [transportation, accessibility, analysis]
+aliases: 
+  - ../../blog/2018/10/21/geneva-bus #old squarespace link
+---
+
+## Riding the bus as a wheelchair user in Geneva
+
+If you tell someone you live in Switzerland (as I currently do), they will usually exclaim three things, in this order:
+
+1.  "Oh, the chocolate!"
+
+2.  "Oh, the fondue!"
+
+3.  "Oh, the trains!"
+
+I'm a fan of all three of these things, but the third is particularly important: the Swiss invest a lot into their public transportation system, and it's one of the main aspects that makes the city so livable.
+
+Geneva public transportation (known as "Transports Publics Genevois" or TPG) is primarily composed of a tram network and a bus network, both of which are extensive and almost completely wheelchair-accessible. For most of the trams and most of the tram stops, a wheelchair user is able to get on and off the tram in any cabin by herself. For the buses, almost all of them have ramps and a large designated space for wheelchair users in the middle of the bus.
+
+However, a wheelchair user is not able to get on and off the bus independently like one can for the trams. The user must wave down the driver, the driver comes to the door with the ramp in the middle of the bus, manually pulls the ramp out, and the wheelchair user gets in the bus. When the wheelchair user wants to get off the bus, there is a special button to press that is meant to alert the driver, so that at the next stop he or she can come around and get the ramp again to let the person off.
+
+This would be all well and good if the driver always responded to the alert and remembered to get the ramp to let the person off. They don't.
+
+If they don't come out to get the ramp, you have to yell for the driver across the bus (the first word I learned in French was "driver!!"), which startles the rest of the passengers, who start looking around and wondering what's wrong and also start yelling. It causes a big scene, especially if the bus is full. The driver then comes around to get the ramp, smiles and laughs and says "Sorry, I forgot!" (the second words I learned in French)
+
+For the driver, it's a one-off occurrence, not a big deal. For a wheelchair user---for me---it happens multiple times a week, and it's truly exhausting. I have to maintain high alert while I'm on the bus to make sure that I can get back off again---listening for the driver getting out of his seat, maneuvering through a crowd of people so I can turn around and yell for him to come before he starts to drive away. I cannot relax, and it's truly embarrassing to have to always make this scene. It's a frequent, painful reminder that I'm not allowed to occupy and move through public space in the same way as others just because I use a wheelchair.
+
+I became increasingly frustrated about this and started to collect data to see how often it really happens and what factors might influence whether or not the driver remembers to come get the ramp. Here are the results.
+
+## The data
+
+I began collecting data February 20, 2017 and continued until February 28, 2018.
+
+During this time, I rode the bus 920 times, or about 2.5 times a day. I rode 17 different bus lines, though the vast majority of these rides were on the lines I take to get to work everyday.
+
+For each ride I collected data on the following topics:
+
+-   Date
+
+-   Time
+
+-   Bus line
+
+-   Stops where I got on and got off
+
+-   If I was alone or riding with someone else
+
+-   If the stops were terminuses
+
+-   If I waved down the driver
+
+-   Driver sex (as best I could assume)
+
+-   If the driver got the ramp onto the bus
+
+-   If the driver asked me where I was getting off and I told him
+
+-   Whether I hit the stop alert button before or after the next stop announcement over the intercom
+
+-   Whether the driver remembered to come get the ramp without me having to yell
+
+-   Notes about the ride
+
+Most of these variables are binary (yes/no), though there were some ambiguous cases that I would make note of (for instance, sometimes it was unclear whether or not the driver forgot or was just slow to get out of his seat). There were 4 times when I forgot to make note whether or not the driver remembered.
+
+## How often do Geneva bus drivers forget to let me off the bus?
+
+The driver remembered to let me off the bus 751 times, or 82% of the rides. He did not remember for 112 rides, or 12.2% of the time. There were 53 ambiguous instances, and most of these were in cases where another passenger on the bus got the ramp before the driver got out of his seat or came to the ramp.
+
+## Does anything make a difference?
+
+To see if any of these factors made a significant difference in whether or not the driver remembered, I ran a quick logistic regression model. The response variable is the binary variable of whether or not the driver remembered to come get the ramp. The following were all binary regressors:
+
+-   If I was alone or riding with someone else
+
+-   If the stops were terminuses
+
+-   If I waved down the driver
+
+-   Driver sex (as best I could assume)
+
+-   If the driver got the ramp onto the bus
+
+-   If the driver asked me where I was getting off and I told him
+
+-   Whether I hit the stop alert button before or after the stop announcement over the intercom
+
+The data used in the model was filtered to only have unambiguous cases for each variable, which constituted 823 rides.
+
+This is the output for the model from R. Three factors are significant at the 0.05 level:
+
+-   if I am going to a terminus stop (if yes, driver is 8.4 times more likely to remember)
+
+-   if I am coming from a terminus stop (if yes, driver is half as likely to remember)
+
+-   if I told the driver where I was getting off (if yes, driver is 5.9 times more likely to remember)
+
+```         
+Call:
+glm(formula = `Driver remembered to get ramp?` ~ ., family = "binomial", 
+    data = bus4glm)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-3.0877   0.1367   0.3722   0.5007   1.4607  
+
+Coefficients:
+                                       Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                             1.31865    0.81437   1.619   0.1054    
+`Alone?`yes                            -0.74508    0.43835  -1.700   0.0892 .  
+`To terminus?`yes                       2.12368    0.45099   4.709 2.49e-06 ***
+`From terminus?`yes                    -0.62152    0.24624  -2.524   0.0116 *  
+`Waved to driver?`yes                   0.33447    0.52887   0.632   0.5271    
+`Driver sex`male                       -0.59710    0.56614  -1.055   0.2916    
+`Driver got ramp onto bus?`yes          0.46001    0.34813   1.321   0.1864    
+`You told driver the stop?`yes          1.77433    0.23418   7.577 3.54e-14 ***
+`Hit button?`right after previous stop  0.08949    0.22683   0.395   0.6932    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 636.03  on 822  degrees of freedom
+Residual deviance: 525.23  on 814  degrees of freedom
+AIC: 543.23
+
+Number of Fisher Scoring iterations: 6
+```
+
+## What's next?
+
+According to my data, there is only one factor in my control that makes much of a difference: whether or not I tell the driver in advance where I am getting off. While collecting this data, I only told the driver where I was getting off if the driver asked me. Going forward, I could volunteer this information and hopefully that would increase the chances. However, I doubt the change would be as great as this model suggests, because drivers who ask me where I am getting off are likely already predisposed to remember to come get the ramp. Volunteering my destination to a driver who is more careless will likely not make much of a difference.
+
+But of course, it's not fair that I should have to be the one that changes my behavior. TPG needs to do something to address this. I plan on getting in contact with them and laying these results out to hopefully encourage some change.
+
+I know drivers' forgetting to come get the ramp is not at all malicious, and I also doubt much blame can be placed on them as individuals. My suspicion is that the alert on the driver's end after I push the stop button is too subtle so they just do not notice it. A simple design-based fix is, as in so many cases, probably the ideal solution.
