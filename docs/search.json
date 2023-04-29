@@ -119,6 +119,13 @@
     "text": "Patterns at the smallest scale: fractal analysis of the lung and modeling of nanoparticle clearance\nOak Ridge National Laboratory, Oak Ridge, TN\nMentor: Richard C. Ward (ORNL)\n\nAbstract\nThis paper explores the accuracy of a fractal-based model for the airway system of the human lung and the clearance of nanoparticles within the system. The purpose of research is to create realistic lung models based on fractals and inhalation kinetics so nanoparticle deposition and clearance can be visualized and understood. Lung diameter data is analyzed using rules for surface area maximization of previous lung branching models. The diameter data is then displayed on a model of a lung branching tree based on the Lindenmayer system method of producing fractals. The clearance model of particles derived by the International Commission on Radiological Protection is created in compartment form in the program JDesigner from Systems Biology Workbench, and then analyzed for its possible application toward modeling particles on the nano-scale. The research has the potential to aid in the development of nanoparticle drug delivery systems through inhalation. These systems could target diseases as a result of regional deposition modeling and nanoparticles’ natural ability to diffuse through a variety of membranes.s"
   },
   {
+    "objectID": "posts/geneva-accessibility-map/index.html",
+    "href": "posts/geneva-accessibility-map/index.html",
+    "title": "Geneva, Switzerland accessibility map",
+    "section": "",
+    "text": "A necessary, slow and frustrating part of moving to a new place for me is figuring out where I can and can’t go with my wheelchair. For my own reference I put information as I gather it into these custom Google maps. I wanted to link to it here in case it is ever useful for anyone else.\nClick here to access my map!\nSome definitions and caveats:\n\nMy definition of “accessibility” is quite narrow and doesn’t cover all the dimensions necessary for a place to be truly accessible to everyone. It’s really a map of the places that are good enough for me personally.\nI classify a place as “accessible” and put it on the map if I am able to go inside with my motorized wheelchair without anybody needing to lift or shove me over the doorway. If the place normally has a stair but they have a portable ramp available, I will add the place to the map and make a note of the ramp.\nIf a place only has accessible seating available outside, it’s not on the map.\nIf a place has a wheelchair accessible toilet, I will add this as a note. But I will add places to the map even if they don’t have a toilet available.\nThe list is definitely not exhaustive! It’s most detailed in the areas of town where I spend most of my time. If you have any additions, please email me!"
+  },
+  {
     "objectID": "news.html",
     "href": "news.html",
     "title": "In the News",
@@ -180,6 +187,13 @@
     "title": "Writing",
     "section": "",
     "text": "Here are some pieces that I’ve published.\n\nSection on “Disabled People’s Access to Healthcare Services” in the report An Affront to Dignity, Inclusion and Equality: Coronavirus and the Impact of Law, Policy, Practice and Access to Services on People with Disabilities in the United Kingdom From the Oxford University Disability Law & Policy Project (July 2, 2020)\nArticle in the Wadham Journal: The Disability Issue critiquing the use of disability-adjusted life years (DALYs) as the measurement tool for disease burden in public health policy (September 21, 2016)\nBlog post for the Blavatnik School of Government about the new building, accessibility, and the importance of inclusive communities (July 19, 2016)\nOp-ed in the Tennesseean, co-written with fellow UT Rhodes Scholar Robert Fisher, opposing the proposed cuts to the Office of Diversity and Inclusion at the University of Tennessee (April 18, 2016)"
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Geneva, Switzerland accessibility map\n\n\n\n\n\n\n\nmap\n\n\naccessibility\n\n\n\n\nIt’s mostly restaurants! This girl loves to eat!\n\n\n\n\n\n\nAug 4, 2017\n\n\nLindsay Lee\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "cv.html",

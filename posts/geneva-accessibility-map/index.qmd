@@ -1,0 +1,22 @@
+---
+title: "Geneva, Switzerland accessibility map"
+description: "It's mostly restaurants! This girl loves to eat!"
+date: "2017-08-04"
+# image: winkingFace.png
+# image-alt: "Winking emoji in a medieval style, hand drawn by the author"
+categories: [map, accessibility]
+aliases: 
+  - blog/2017/8/4/geneva-switzerland-accessibility-map
+---
+
+A necessary, slow and frustrating part of moving to a new place for me is figuring out where I can and can't go with my wheelchair. For my own reference I put information as I gather it into these custom Google maps. I wanted to link to it here in case it is ever useful for anyone else.
+
+[Click here to access my map!](https://drive.google.com/open?id=1AuP_MNy4VbS8UvOkv6LW3JimPwg&usp=sharing)
+
+Some definitions and caveats:
+
+-   My definition of "accessibility" is quite narrow and doesn't cover all the dimensions necessary for a place to be truly accessible to everyone. It's really a map of the places that are good enough for me personally.
+-   I classify a place as "accessible" and put it on the map if I am able to go **inside** with my motorized wheelchair without anybody needing to lift or shove me over the doorway. If the place normally has a stair but they have a portable ramp available, I will add the place to the map and make a note of the ramp.
+-   If a place only has accessible seating available outside, it's not on the map.
+-   If a place has a wheelchair accessible toilet, I will add this as a note. But I will add places to the map even if they don't have a toilet available.
+-   The list is definitely not exhaustive! It's most detailed in the areas of town where I spend most of my time. If you have any additions, please [email me](about.html)!
