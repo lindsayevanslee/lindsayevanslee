@@ -15,15 +15,15 @@ website:
       - research.qmd
       - writing.qmd
       - news.qmd
-      - posts.qmd
+      - blog.qmd
 
 format:
   html:
     theme: cosmo
     css: styles.css
     toc: true
-    header-includes: <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    mainfont: Roboto
+    header-includes: <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito&display=swap">
+    mainfont: Nunito
 
 editor: visual
 
