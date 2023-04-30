@@ -6,7 +6,7 @@ image: gabfest.jpg
 image-alt: "Logo for Slate Political Gabfest podcast"
 categories: [analysis, politics, podcast]
 aliases: 
-  - ../../blog/2021/10/21/gabfest-interruptions #old squarespace link
+  - ../2021/10/21/gabfest-interruptions #old squarespace link
 ---
 
 I love [Slate's Political Gabfest podcast](https://slate.com/podcasts/political-gabfest). One fateful day I told my dear friend [Kathleen](https://www.kathleenaconnelly.com/), "I think I want to start getting *in* to podcasts." She emphatically recommended the show, and I've been a devoted listener ever since. All of my political opinions come from the discussions the hosts Emily Bazelon, David Plotz, and John Dickerson have each week.
