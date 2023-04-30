@@ -2,10 +2,10 @@
   {
     "listing": "/blog.html",
     "items": [
-      "/posts/gabfest-interruptions/index.html",
-      "/posts/geneva-bus/index.html",
-      "/posts/geneva-accessibility-map/index.html",
-      "/posts/sagamihara/index.html"
+      "/blog/gabfest-interruptions/index.html",
+      "/blog/geneva-bus/index.html",
+      "/blog/geneva-accessibility-map/index.html",
+      "/blog/sagamihara/index.html"
     ]
   }
 ]
