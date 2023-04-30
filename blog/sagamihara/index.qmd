@@ -6,7 +6,7 @@ image: https://psmag.com/.image/t_share/MTQ2NTk2MjQ0NjcwOTE2NDc1/59d60-1ttaq4nwj
 image-alt: "A mother and her daughter offer flowers for the victims of a knife rampage at the Tsukui Yamayuri En care centre on July 28, 2016, in Sagamihara, Kanagawa Prefecture, Japan. (Photo: Kazuhiro Nogi/AFP/Getty Images, via David Perry)"
 categories: [ableism, media, analysis]
 aliases: 
-  - ../../blog/2016/8/11/silence-for-sagamihara #old squarespace link
+  - ../2016/8/11/silence-for-sagamihara #old squarespace link
 ---
 
 ![A mother and her daughter offer flowers for the victims of a knife rampage at the Tsukui Yamayuri En care centre on July 28, 2016, in Sagamihara, Kanagawa Prefecture, Japan. (Photo: Kazuhiro Nogi/AFP/Getty Images, via David Perry)](https://psmag.com/.image/t_share/MTQ2NTk2MjQ0NjcwOTE2NDc1/59d60-1ttaq4nwj2_gmfr4lfjbuew.jpg){fig-alt="A mother and her daughter offer flowers for the victims of a knife rampage at the Tsukui Yamayuri En care centre on July 28, 2016, in Sagamihara, Kanagawa Prefecture, Japan. (Photo: Kazuhiro Nogi/AFP/Getty Images, via David Perry)"}
@@ -43,7 +43,7 @@ I want someone to blame for the silence on Sagamihara. I want to blame the Japan
 But it's not that simple; it's not possible and it's irresponsible to try to point fingers at one entity or to think about this event as an isolated incident. The causes of this massacre are the same causes of the silence surrounding it, and we are all at fault.
 
 | Location                                                                        | Date          | Casualties           |
-|--------------------------------------|-----------------|-----------------|
+|-------------------------------------|------------------|------------------|
 | [Sagamihara](https://en.wikipedia.org/wiki/Sagamihara_stabbings)                | July 26, 2016 | 19 dead, 26 injured  |
 | [Munich](https://en.wikipedia.org/wiki/2016_Munich_shooting)                    | July 22, 2016 | 10 dead, 36 injured  |
 | [Nice](https://en.wikipedia.org/wiki/2016_Nice_attack)                          | July 14, 2016 | 85 dead, 307 injured |

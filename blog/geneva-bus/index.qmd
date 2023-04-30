@@ -6,7 +6,7 @@ image: https://www.intelligenttransport.com/wp-content/uploads/After-a-decade-of
 image-alt: "A side view of a bus in front of the United Nations Office at Geneva"
 categories: [transportation, accessibility, analysis]
 aliases: 
-  - ../../blog/2018/10/21/geneva-bus #old squarespace link
+  - ../2018/10/21/geneva-bus #old squarespace link
 ---
 
 ## Riding the bus as a wheelchair user in Geneva
