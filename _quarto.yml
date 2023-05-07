@@ -5,7 +5,7 @@ project:
 website:
   title: "lindsayevanslee.com"
   description: "Lindsay Lee's website"
-  favicon: "favicon.png"
+  favicon: "images/favicon.png"
   navbar:
     left:
       - href: index.qmd
@@ -19,7 +19,7 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme: simplex
     css: styles.css
     toc: true
     header-includes: <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito&display=swap">
