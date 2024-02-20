@@ -16,6 +16,7 @@ website:
       - writing.qmd
       - news.qmd
       - blog.qmd
+      - lindsaycodes.qmd
 
 format:
   html:

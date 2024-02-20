@@ -2,10 +2,9 @@
 title: "CV"
 ---
 
-Download my CV here: 
+Download my CV here:
 
-::: {.download_btn}
-
+::: download_btn
 ```{css}
 #| echo: false
 
@@ -27,20 +26,18 @@ Download my CV here:
 
 ```
 
-
 ```{r}
 #| echo: false
 
 library(downloadthis)
 
 download_file(
-  path = "Lindsay Lee cv 2023-03-25.pdf",
-  output_name = "Lindsay Lee cv 2023-03-25",
+  path = "Lindsay Lee cv 2024-02-19.pdf",
+  output_name = "Lindsay Lee cv 2024-02-19",
   button_label = "",
   button_type = "default",
   has_icon = TRUE,
   icon = "fa fa-file-pdf"
 )
 ```
-
 :::

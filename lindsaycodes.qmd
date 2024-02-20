@@ -1,0 +1,5 @@
+---
+title: "lindsay.codes"
+---
+
+Check out my informal diary of technical stuff I'm experimenting with at [lindsay.codes](https://lindsay.codes).
