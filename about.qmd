@@ -14,9 +14,6 @@ about:
     - icon: github
       text: Github
       href: https://github.com/lindsayevanslee
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/lindsayevanslee
     - icon: envelope-at-fill
       text: Email
       href: mailto:me@lindsayevanslee.com
