@@ -12,3 +12,16 @@
 
 */
 
+/* css styles */
+:root {
+  --bs-body-bg: #fdf6e3;
+  --bs-body-color: #495057;
+}
+
+.navbar, .quarto-title-banner {
+  background: #eee8d5;
+  color: var(--bs-body-color);
+}
+
+
+
