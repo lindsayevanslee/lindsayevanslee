@@ -32,8 +32,8 @@ Download my CV here:
 library(downloadthis)
 
 download_file(
-  path = "Lindsay Lee CV 2025-01-14.pdf",
-  output_name = "Lindsay Lee CV 2025-01-14",
+  path = "Lindsay Lee CV 2025-02-04.pdf",
+  output_name = "Lindsay Lee CV 2025-02-04",
   button_label = "",
   button_type = "default",
   has_icon = TRUE,
