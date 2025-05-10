@@ -1,11 +1,9 @@
 <h1 align="center">Hi 👋, I'm Lindsay</h1>
 <h3 align="center">Data analyst in healthcare</h3>
 
-<p align="left"> <a href="https://twitter.com/lindsayevanslee" target="blank"><img src="https://img.shields.io/twitter/follow/lindsayevanslee?logo=twitter&style=for-the-badge" alt="lindsayevanslee" /></a> </p>
-
 - 🔭 I maintain [whomds](https://github.com/lindsayevanslee/whomds)
 
-- 🌱 I’m currently learning **Javascript, D3, and font design**
+- 🌱 I’m currently learning **Python, AI engineering, and font design**
 
 - 👨‍💻 See what I'm working on at [lindsay.codes](https://lindsay.codes) or [https://github.com/lindsayevanslee](https://github.com/lindsayevanslee)
 
@@ -15,7 +13,6 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://twitter.com/lindsayevanslee" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="lindsayevanslee" height="30" width="40" /></a>
 <a href="https://linkedin.com/in/lindsayevanslee" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="lindsayevanslee" height="30" width="40" /></a>
 </p>
 
