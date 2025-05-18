@@ -79,6 +79,7 @@
 /* Navbar background */
 .navbar, #quarto-header {
   background-color: oklch(64.11% 0.084 353.91) !important;
+  border-style: none;
 }
 
 /* Navbar text colors */
@@ -122,6 +123,7 @@ a {
   color: oklch(14.38% 0.007 256.88) !important;
 }
 
+/* Blog post border */
 .quarto-post {
   border-bottom-color: oklch(45.8% 0.177 17.7) !important;
 }
@@ -145,6 +147,7 @@ a {
   font-weight: bold;
 }
 
+/* Active TOC link border */
 .sidebar .toc-active .nav-link {
   border-left-color: oklch(45.8% 0.177 17.7) !important;
 }
@@ -155,10 +158,24 @@ a {
   text-decoration: underline;
 }
 
+/* Header styling */
 h2 {
   border-bottom-color: oklch(45.8% 0.177 17.7) !important;
 }
 
+/* Horizontal rule styling */
 hr {
   border-color: oklch(45.8% 0.177 17.7) !important;
+}
+
+/* Quarto blog post header styling */
+
+.quarto-title-banner {
+  background: oklch(95.8% 0.023 354.27);
+}
+
+.quarto-title-block {
+  background: oklch(95.8% 0.023 354.27);
+  margin-block-end: 0px !important;
+  padding-block-end: 17px !important;
 }
