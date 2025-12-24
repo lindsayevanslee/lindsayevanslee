@@ -38,7 +38,9 @@ A [column](http://www.utdailybeacon.com/opinion/lindsay-lee-rhodes-scholar/artic
 
 University of Tennessee video (below) (November 26, 2013):
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bDKEKX1GGs8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bDKEKX1GGs8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+
+</iframe>
 
 ## In Tennessee
 
@@ -50,7 +52,7 @@ My [op-ed](http://www.tennessean.com/story/opinion/contributors/2016/04/18/unive
 
 [*Tennessee Today*](http://tntoday.utk.edu/2013/02/27/students-finalists-truman-scholarships/) about Truman Scholarship Finalist (February 27, 2013)
 
-[*Tennessee Journalist*](http://tnjn.org/2013/mar/19/video-amplify-ut-pushes-indivi/)about Amplify UT student government campaign (March 19, 2013)
+[*Tennessee Journalist*](http://tnjn.org/2013/mar/19/video-amplify-ut-pushes-indivi/) about Amplify UT student government campaign (March 19, 2013)
 
 [*Oak Ridger*](http://www.oakridger.com/article/20090827/NEWS/308279977) story about removing barriers with my high school history teacher at the Gettysburg National Military Park (August 27, 2009)
 
