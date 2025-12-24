@@ -2,14 +2,14 @@
 title: "Silence for Sagamihara"
 description: "On the \"deadliest individual act of violence against people with disabilities in modern history\""
 date: "2016-08-11"
-image: https://psmag.com/.image/t_share/MTQ2NTk2MjQ0NjcwOTE2NDc1/59d60-1ttaq4nwj2_gmfr4lfjbuew.jpg
+image: https://psmag.com/wp-content/uploads/2024/07/59d60-1ttaq4nwj2_gmfr4lfjbuew.jpg?w=1160&h=0&crop=1
 image-alt: "A mother and her daughter offer flowers for the victims of a knife rampage at the Tsukui Yamayuri En care centre on July 28, 2016, in Sagamihara, Kanagawa Prefecture, Japan. (Photo: Kazuhiro Nogi/AFP/Getty Images, via David Perry)"
 categories: [ableism, media, analysis]
 aliases: 
   - ../2016/8/11/silence-for-sagamihara #old squarespace link
 ---
 
-![A mother and her daughter offer flowers for the victims of a knife rampage at the Tsukui Yamayuri En care centre on July 28, 2016, in Sagamihara, Kanagawa Prefecture, Japan. (Photo: Kazuhiro Nogi/AFP/Getty Images, via David Perry)](https://psmag.com/.image/t_share/MTQ2NTk2MjQ0NjcwOTE2NDc1/59d60-1ttaq4nwj2_gmfr4lfjbuew.jpg){fig-alt="A mother and her daughter offer flowers for the victims of a knife rampage at the Tsukui Yamayuri En care centre on July 28, 2016, in Sagamihara, Kanagawa Prefecture, Japan. (Photo: Kazuhiro Nogi/AFP/Getty Images, via David Perry)"}
+![A mother and her daughter offer flowers for the victims of a knife rampage at the Tsukui Yamayuri En care centre on July 28, 2016, in Sagamihara, Kanagawa Prefecture, Japan. (Photo: Kazuhiro Nogi/AFP/Getty Images, via David Perry)](https://psmag.com/wp-content/uploads/2024/07/59d60-1ttaq4nwj2_gmfr4lfjbuew.jpg?w=1160&h=0&crop=1){fig-alt="A mother and her daughter offer flowers for the victims of a knife rampage at the Tsukui Yamayuri En care centre on July 28, 2016, in Sagamihara, Kanagawa Prefecture, Japan. (Photo: Kazuhiro Nogi/AFP/Getty Images, via David Perry)"}
 
 *content notice: ableism, murder, hate crime, terrorism*
 
@@ -22,16 +22,22 @@ The Sagamihara massacre has been a main topic of discussion and collective mourn
 The worldwide Google trends after recent massacres illuminate just how silent the world has been about Sagamihara. To compare, I chose four other recent mass killings with similarly high casualty counts and victims who were, at least loosely, targeted: Munich, Nice, Dallas and Orlando (basic details at the bottom of this post). The following chart from Google compares the global relative search interest in different topics over time. The peak popularity across all terms is assigned a value of 100, and the values on the vertical represent the interest relative to this peak. For instance in the chart below, the highest peak in this time frame is the search for Nice on July 15, the day after the attack. On this day, searches for "Dallas" were only 7% as popular, and searches for "Orlando" were 5% as popular.
 
 ```{=html}
-<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/3316_RC03/embed_loader.js"></script>
+<script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/4284_RC01/embed_loader.js"></script>
 ```
+
 ```{=html}
 <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"sagamihara","geo":"","time":"2016-05-13 2016-08-11"},{"keyword":"munich","geo":"","time":"2016-05-13 2016-08-11"},{"keyword":"dallas","geo":"","time":"2016-05-13 2016-08-11"},{"keyword":"orlando","geo":"","time":"2016-05-13 2016-08-11"},{"keyword":"nice","geo":"","time":"2016-05-13 2016-08-11"}],"category":0,"property":""}, {"exploreQuery":"date=2016-05-13%202016-08-11&q=sagamihara,munich,dallas,orlando,nice&hl=en","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
 ```
+
+
+
+
 Comparing these five massacres in this 90-day time frame, relative interest in Sagamihara never breaks 1%. In fact, if you compare just Sagamihara and Munich, which had the next-smallest peak, searches for the Japanese massacre only attain 1% of the relative interest in the German massacre---on July 26, the day of the attack---and then it's back to 0.
 
 ```{=html}
 <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"sagamihara","geo":"","time":"2016-05-13 2016-08-11"},{"keyword":"munich","geo":"","time":"2016-05-13 2016-08-11"}],"category":0,"property":""}, {"exploreQuery":"date=2016-05-13%202016-08-11&q=sagamihara,munich&hl=en","guestPath":"https://trends.google.com:443/trends/embed/"}); </script>
 ```
+
 I don't know how helpful these comparisons actually are. It's hard to scientifically choose mass killings with similar profiles for comparison because there isn't a unified database of these events (at least that I could find---[email me](../../about.html) if I'm wrong). So naturally I will choose events that I already know about, which is a product of the social and media environment in which I live. People die in tragic ways everyday, and mass murders happen more often than I think any of us, especially in the Western world, care to know. Our biggest media outlets will only pick up a story if it fits into our existing expectations of who is saint and who is criminal, who deserves justice and who does not.
 
 But as a wheelchair user, I felt this silence personally. It feels as if the world does not think this story deserves to be told, as if the people who were murdered were not important enough for us to care if they lived or died. I've been distracted by this event, part of me wondering how many people I know secretly half-way think killing disabled people is a kind of mercy, wondering how many people I pass on the street think the world would be a little brighter if I weren't there.
@@ -42,12 +48,12 @@ I want someone to blame for the silence on Sagamihara. I want to blame the Japan
 
 But it's not that simple; it's not possible and it's irresponsible to try to point fingers at one entity or to think about this event as an isolated incident. The causes of this massacre are the same causes of the silence surrounding it, and we are all at fault.
 
-| Location                                                                        | Date          | Casualties           |
-|-------------------------------------|------------------|------------------|
-| [Sagamihara](https://en.wikipedia.org/wiki/Sagamihara_stabbings)                | July 26, 2016 | 19 dead, 26 injured  |
-| [Munich](https://en.wikipedia.org/wiki/2016_Munich_shooting)                    | July 22, 2016 | 10 dead, 36 injured  |
-| [Nice](https://en.wikipedia.org/wiki/2016_Nice_attack)                          | July 14, 2016 | 85 dead, 307 injured |
-| [Dallas](https://en.wikipedia.org/wiki/2016_shooting_of_Dallas_police_officers) | July 7, 2016  | 6 dead, 11 injured   |
-| [Orlando](https://en.wikipedia.org/wiki/2016_Orlando_nightclub_shooting)        | June 12, 2016 | 49 dead, 53 injured  |
+| Location | Date | Casualties |
+|------------------------------------|------------------|------------------|
+| [Sagamihara](https://en.wikipedia.org/wiki/Sagamihara_stabbings) | July 26, 2016 | 19 dead, 26 injured |
+| [Munich](https://en.wikipedia.org/wiki/2016_Munich_shooting) | July 22, 2016 | 10 dead, 36 injured |
+| [Nice](https://en.wikipedia.org/wiki/2016_Nice_attack) | July 14, 2016 | 85 dead, 307 injured |
+| [Dallas](https://en.wikipedia.org/wiki/2016_shooting_of_Dallas_police_officers) | July 7, 2016 | 6 dead, 11 injured |
+| [Orlando](https://en.wikipedia.org/wiki/2016_Orlando_nightclub_shooting) | June 12, 2016 | 49 dead, 53 injured |
 
 : Mass killing details

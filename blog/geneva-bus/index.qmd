@@ -2,8 +2,8 @@
 title: "How can I get Geneva bus drivers to stop forgetting to let me off the bus?"
 description: "Trying to find an answer with obsessive data collection"
 date: "2018-10-21"
-image: https://www.intelligenttransport.com/wp-content/uploads/After-a-decade-of-growth-Geneva-now-concentrates-on-improving-service-quality.jpg
-image-alt: "A side view of a bus in front of the United Nations Office at Geneva"
+image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjczIC8i_vNLGcR4E2TZzzlwWn0iWfAxaXzA&s
+image-alt: "Image of a fold-out ramp on a Geneva bus"
 categories: [transportation, accessibility, analysis]
 aliases: 
   - ../2018/10/21/geneva-bus #old squarespace link
