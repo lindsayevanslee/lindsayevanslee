@@ -1,5 +1,6 @@
 ---
 title: "Writing"
+toc: false
 ---
 
 Here are some pieces that I've published.
