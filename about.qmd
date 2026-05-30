@@ -1,6 +1,6 @@
 ---
 title: "About"
-image: images/me.jpeg
+image: assets/me.jpeg
 image-alt: A white woman with brown hair pulled back, in a green patterned dress and beige cardigan, sitting in a wheelchair, smiling like she loves having a headshot taken
 about:
   template: solana

@@ -5,7 +5,7 @@ project:
 website:
   title: "lindsayevanslee.com"
   description: "Lindsay Lee's website"
-  favicon: "images/favicon.png"
+  favicon: "assets/favicon.png"
   navbar:
     left:
       - href: index.qmd
@@ -20,13 +20,13 @@ website:
 
 format:
   html:
-    theme: [simplex, byrne.scss]
+    theme: [simplex, assets/byrne.scss]
     toc: true
     header-includes: <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sen&display=swap">
     mainfont: Sen
-    include-after-body: _byrne-includes.html
+    include-after-body: assets/_byrne-includes.html
 
 resources:
   - CNAME
-  - images/byrne
+  - assets/byrne
 

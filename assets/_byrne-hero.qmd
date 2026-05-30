@@ -1,0 +1,14 @@
+<!--
+  Homepage hero — a single genuine Oliver Byrne figure (Elements of Euclid,
+  1847, public domain) from Wikimedia Commons, saved in assets/byrne/.
+  Included from index.qmd. Subtle riso grain is applied via CSS in
+  assets/_byrne-includes.html.
+
+  Block-level <div> children (not inline <span>) so Pandoc doesn't
+  paragraph-wrap them inside the raw <div>. The image uses a root-relative
+  src so it resolves the same way no matter where this partial is included
+  from (it lives in assets/ but is spliced into the root index.qmd).
+-->
+<div class="byrne-hero">
+<div class="byrne-figure"><img src="/assets/byrne/36_diagram_1.svg" alt="Oliver Byrne's colour diagram from Euclid's Elements: a large red circle overlapping a blue circle, with red, yellow and black lines marking an angle at the centre."></div>
+</div>

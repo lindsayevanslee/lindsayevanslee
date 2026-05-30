@@ -184,10 +184,10 @@ hr {
 //  Risographic decorative figures
 // =====================================================================
 // The figures are genuine Oliver Byrne plates (Elements of Euclid, 1847,
-// public domain) saved in images/byrne/ and rendered as <img>. The hero
-// markup lives in _byrne-hero.qmd; the corner accents in
-// _byrne-includes.html. The riso grain filter is applied to the images
-// via a <style> block in _byrne-includes.html (see note there).
+// public domain) saved in assets/byrne/ and rendered as <img>. The hero
+// markup lives in assets/_byrne-hero.qmd; the corner accents in
+// assets/_byrne-includes.html. The riso grain filter is applied to the
+// images via a <style> block in assets/_byrne-includes.html (see note there).
 
 // Homepage hero composition.
 .byrne-hero {
