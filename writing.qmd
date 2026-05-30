@@ -4,7 +4,15 @@ title: "Writing"
 
 Here are some pieces that I've published.
 
-* * * * *
+::: {.byrne-divider role="separator"}
+<div class="byrne-divider-figs">
+<div class="byrne-divider-rule"><img src="/assets/byrne/byrne_79_diagram_6.svg" alt="" aria-hidden="true"></div>
+<div class="byrne-figure"><img src="/assets/byrne/byrne_84_diagram_2.svg" alt="" aria-hidden="true"></div>
+<div class="byrne-figure"><img src="/assets/byrne/byrne_84_diagram_1.svg" alt="" aria-hidden="true"></div>
+<div class="byrne-figure"><img src="/assets/byrne/byrne_84_diagram_3.svg" alt="" aria-hidden="true"></div>
+<div class="byrne-divider-rule"><img src="/assets/byrne/byrne_79_diagram_6.svg" alt="" aria-hidden="true"></div>
+</div>
+:::
 
 [Section](https://www.law.ox.ac.uk/sites/files/oxlaw/lindsay_lee.pdf) on "Disabled People's Access to Healthcare Services" in the [report](https://www.law.ox.ac.uk/news/2020-07-02-affront-dignity-inclusion-and-equality-coronavirus-and-impact-law-policy-practice) *An Affront to Dignity, Inclusion and Equality: Coronavirus and the Impact of Law, Policy, Practice and Access to Services on People with Disabilities in the United Kingdom* From the Oxford University Disability Law & Policy Project (July 2, 2020)
 

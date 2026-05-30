@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="303.4mm" height="180.4mm" stroke-width="7" version="1.1" viewBox="0 0 303.4 180.4" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(46.831 -58.208)">
+  <path transform="scale(-1,1)" d="m-152.16 236.91a47.651 48.828 0 0 1 47.651-48.828v48.828z" fill="#ff5030" image-rendering="auto"/>
+  <path d="m56.854 236.91a47.651 48.828 0 0 1 47.651-48.828v48.828z" fill="#ffce2f"/>
+ </g>
+ <g transform="translate(46.831 -58.208)" stroke-dasharray="7, 7">
+  <path d="m104.51 59.114-150.71 177.8" fill="#ff5030" stroke="#ff5030"/>
+  <path d="m-46.201 236.91h152.4" fill="none" stroke="#000"/>
+ </g>
+ <g transform="translate(46.831 -58.208)">
+  <path d="m104.51 59.114 151 178.09" fill="#ff5030" stroke="#ff5030"/>
+  <path d="m104.51 59.114v179.49" fill="#fff" stroke="#12467e"/>
+  <path d="m103.11 237.21h152.4" fill="none" stroke="#000"/>
+ </g>
+</svg>
