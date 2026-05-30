@@ -224,8 +224,16 @@ hr {
 // We double the class (0,2,0) so these overrides win the cascade without
 // resorting to !important.
 
-// No rule between posts.
+// A dashed red rule *between* posts, matching the TOC rail (2px dashed
+// $byrne-red). The base rule clears Quarto's default listing border; the
+// :not(:last-child) rule (specificity 0,3,0, beating both) draws the dash on
+// every post but the last, so there's no trailing line. padding-bottom mirrors
+// the post's 1.5rem bottom margin so the rule sits centred in the gap.
 .quarto-post.quarto-post { border-bottom: none; }
+.quarto-post.quarto-post:not(:last-child) {
+  border-bottom: 2px dashed $byrne-red;
+  padding-bottom: 1.5rem;
+}
 .quarto-post a.listing-title,
 .quarto-post .listing-date,
 .quarto-post .listing-author,
