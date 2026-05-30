@@ -122,9 +122,25 @@ h1, .title { color: $byrne-ink; }
   a { color: $byrne-ink; }
 }
 
-h2 {
-  border-bottom: 2px solid $byrne-red-dk;
-  padding-bottom: 0.2rem;
+// Section headers carry a three-segment Byrne rule instead of a plain line —
+// a recreation of plate "Byrne 87 diagram 3", where a single horizontal line
+// is shown in three coloured lengths (blue | red | ochre). Built as a CSS
+// linear-gradient from the palette tokens (no external asset, scales to any
+// width). Segment proportions echo the original (~42% / 32% / 26%).
+// Scoped to the document body so the TOC's "On this page" heading (also an
+// <h2>, but #toc-title in the sidebar) is left clean — no rule under it.
+#quarto-document-content h2 {
+  border-bottom: none;
+  padding-bottom: 0.3rem;
+  background-image: linear-gradient(
+    to right,
+    $byrne-blue   0,     $byrne-blue   42%,
+    $byrne-red    42%,   $byrne-red    74%,
+    $byrne-yellow 74%,   $byrne-yellow 100%
+  );
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 100% 3px;
 }
 
 // Section dividers as a small geometric motif (three Byrne squares)
@@ -140,13 +156,32 @@ hr {
 }
 
 // ---- TOC sidebar -----------------------------------------------------
+// The vertical rail is a *dashed* line in the bright vermilion $byrne-red —
+// echoing Byrne's plate "56 three lines", where given magnitudes are notated
+// as bold dashed segments, and reusing the middle colour of the h2 section
+// rule to tie the two motifs together.
+//
+// Crucially the rail is drawn ONCE, on the list container, not on each
+// nav-link's border: a per-link dashed border restarts its dash pattern at
+// every item, so abutting dash-ends clump into stray "solid" stretches. A
+// single border on the outer <ul> gives one uninterrupted, even dash run.
 .sidebar .nav-link { color: $byrne-ink; }
+// One continuous rail on the outer list; suppress Quarto's per-link borders —
+// including the default solid border it puts on the active item — so the dash
+// pattern stays uniform and unbroken down the whole TOC.
+.sidebar .toc-active > ul {
+  border-left: 2px dashed $byrne-red;
+}
+.sidebar .toc-active .nav-link,
+.sidebar .toc-active .nav-link.active { border-left: none; }
+// Active item is shown by bold dark-red text only. (A per-item dashed marker
+// cannot phase-align with the single container rail — different element, so a
+// separate dash pattern — so we deliberately don't try to thicken the rail
+// per-segment. An active-position marker, if wanted, needs a non-dash cue.)
 .sidebar .toc-active .nav-link.active {
-  color: $byrne-red-dk;
-  border-left-color: $byrne-red-dk;
+  color: $byrne-red-dk;   // darker red keeps AA contrast on cream
   font-weight: 600;
 }
-.sidebar .toc-active .nav-link { border-left-color: $byrne-red-dk; }
 .sidebar .toc-active .nav-link:hover {
   color: $byrne-red-dk;
   text-decoration: underline;
