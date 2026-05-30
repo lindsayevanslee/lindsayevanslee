@@ -1,0 +1,230 @@
+/*-- scss:defaults --*/
+
+// =====================================================================
+//  Byrne's Euclid theme for lindsayevanslee.com
+//  Layered on top of the Bootswatch "simplex" base via _quarto.yml:
+//      theme: [simplex, byrne.scss]
+//
+//  Inspired by Oliver Byrne's 1847 colour edition of Euclid's Elements:
+//  flat primary figures (red / blue / yellow / black) on warm cream
+//  "paper", with a subtle risographic grain + ink-overprint feel.
+// =====================================================================
+
+// ---- Byrne palette ---------------------------------------------------
+// Bright primaries are reserved for the decorative figures; the darker
+// red is used for text/links so it clears WCAG AA contrast on cream.
+$byrne-cream:   #f4ecd8;   // warm paper background
+$byrne-cream-2: #efe6cf;   // slightly deeper cream (surfaces / banners)
+$byrne-ink:     #1a1a1a;   // near-black body text
+$byrne-red:     #cb3f33;   // vermilion (figures)
+$byrne-red-dk:  #a8261c;   // darker red (links / text accents)
+$byrne-blue:    #1f3f8f;   // deep ultramarine
+$byrne-yellow:  #e8a700;   // ochre / mustard
+
+// ---- Bootstrap / Bootswatch variable overrides ----------------------
+// Setting these as Sass *defaults* lets Bootstrap derive all its
+// component colours from the Byrne palette before it compiles.
+$body-bg:          $byrne-cream;
+$body-color:       $byrne-ink;
+$primary:          $byrne-blue;
+$secondary:        $byrne-red;
+$link-color:       $byrne-red-dk;
+$link-hover-color: darken($byrne-red-dk, 10%);
+
+// Navbar: a strong primary band with cream text (echoes the book's
+// colour blocks). Bootswatch uses these to colour the navbar.
+$navbar-bg:                 $byrne-blue;
+$navbar-fg:                 $byrne-cream;
+$navbar-dark-color:         $byrne-cream;
+$navbar-dark-hover-color:   $byrne-yellow;
+$navbar-dark-active-color:  #ffffff;
+
+/*-- scss:rules --*/
+
+// ---- Expose the palette as CSS custom properties ---------------------
+// so the inline SVG figures and any .qmd markup can reference them.
+:root {
+  --byrne-cream:   #{$byrne-cream};
+  --byrne-cream-2: #{$byrne-cream-2};
+  --byrne-ink:     #{$byrne-ink};
+  --byrne-red:     #{$byrne-red};
+  --byrne-red-dk:  #{$byrne-red-dk};
+  --byrne-blue:    #{$byrne-blue};
+  --byrne-yellow:  #{$byrne-yellow};
+}
+
+// ---- Graph-paper background -----------------------------------------
+// Pure CSS: layered repeating gradients = no image asset to download.
+// Minor grid every 24px, bold major grid every 120px (5 squares).
+// Low alpha keeps it faint so body text stays readable.
+$grid-minor: 24px;
+$grid-major: 120px;
+$grid-ink-minor: rgba(31, 63, 143, 0.06);  // faint blue, like engineering paper
+$grid-ink-major: rgba(31, 63, 143, 0.11);
+
+body {
+  background-color: $byrne-cream;
+  background-image:
+    // major lines (drawn on top, slightly stronger)
+    repeating-linear-gradient(to right,  $grid-ink-major 0, $grid-ink-major 1px, transparent 1px, transparent $grid-major),
+    repeating-linear-gradient(to bottom, $grid-ink-major 0, $grid-ink-major 1px, transparent 1px, transparent $grid-major),
+    // minor lines
+    repeating-linear-gradient(to right,  $grid-ink-minor 0, $grid-ink-minor 1px, transparent 1px, transparent $grid-minor),
+    repeating-linear-gradient(to bottom, $grid-ink-minor 0, $grid-ink-minor 1px, transparent 1px, transparent $grid-minor);
+  background-attachment: fixed;
+}
+
+// ---- Navbar ----------------------------------------------------------
+.navbar {
+  border-bottom: 3px solid $byrne-ink;   // a crisp printed rule under the band
+}
+// belt-and-braces: make sure navbar text reads as cream on the blue band
+// regardless of how Bootswatch resolves its defaults.
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .nav-link .menu-text,
+.navbar .navbar-toggler-icon {
+  color: $byrne-cream;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link:hover .menu-text {
+  color: $byrne-yellow;
+}
+.navbar .nav-link.active,
+.navbar .nav-link.active .menu-text {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+// ---- Links -----------------------------------------------------------
+a {
+  color: $byrne-red-dk;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+a:hover { color: $link-hover-color; }
+
+// ---- Headings & rules ------------------------------------------------
+h1, .title { color: $byrne-ink; }
+
+// Let the graph paper show through page titles instead of a solid panel.
+// Blog posts use `title-block-banner: true`, which Quarto fills with a
+// solid $primary (blue) band + cream text — override it to transparent
+// with dark ink so it reads over the paper, like every other page title.
+.quarto-title-banner {
+  background: transparent;
+  color: $byrne-ink;
+  .quarto-title .title,
+  .quarto-title-meta,
+  .quarto-title-meta-heading,
+  .quarto-title-meta-contents,
+  a { color: $byrne-ink; }
+}
+
+h2 {
+  border-bottom: 2px solid $byrne-red-dk;
+  padding-bottom: 0.2rem;
+}
+
+// Section dividers as a small geometric motif (three Byrne squares)
+// instead of a plain line. SVG is inlined as a data-URI background.
+hr {
+  border: none;
+  height: 18px;
+  margin: 2.2rem auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  // red / blue / yellow squares with a thin ink stroke
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='78' height='18' viewBox='0 0 78 18'%3E%3Cg stroke='%231a1a1a' stroke-width='1.2'%3E%3Crect x='1' y='1' width='16' height='16' fill='%23cb3f33'/%3E%3Crect x='31' y='1' width='16' height='16' fill='%231f3f8f'/%3E%3Crect x='61' y='1' width='16' height='16' fill='%23e8a700'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+// ---- TOC sidebar -----------------------------------------------------
+.sidebar .nav-link { color: $byrne-ink; }
+.sidebar .toc-active .nav-link.active {
+  color: $byrne-red-dk;
+  border-left-color: $byrne-red-dk;
+  font-weight: 600;
+}
+.sidebar .toc-active .nav-link { border-left-color: $byrne-red-dk; }
+.sidebar .toc-active .nav-link:hover {
+  color: $byrne-red-dk;
+  text-decoration: underline;
+}
+
+// ---- Blog listing ----------------------------------------------------
+// NOTE: Quarto's own listing CSS targets `div.quarto-post` and
+// `div.listing-category` (specificity 0,1,1), which beats a plain class.
+// We double the class (0,2,0) so these overrides win the cascade without
+// resorting to !important.
+
+// No rule between posts.
+.quarto-post.quarto-post { border-bottom: none; }
+.quarto-post a.listing-title,
+.quarto-post .listing-date,
+.quarto-post .listing-author,
+.quarto-post .body a {
+  color: $byrne-ink;
+}
+// Category tags match the About-page link buttons: gray text + gray
+// border, turning dark-red on hover. Quarto colours these via the deep
+// selector `div.quarto-post .listing-categories .listing-category`
+// (specificity 0,3,1); rather than fight that with ever-longer
+// selectors, a targeted !important wins cleanly (Quarto uses none here).
+.listing-category {
+  color: #4d4d4d !important;
+  border-color: #4d4d4d !important;
+}
+.listing-category:hover {
+  color: $byrne-red-dk !important;
+  border-color: $byrne-red-dk !important;
+}
+
+// =====================================================================
+//  Risographic decorative figures
+// =====================================================================
+// The figures are genuine Oliver Byrne plates (Elements of Euclid, 1847,
+// public domain) saved in images/byrne/ and rendered as <img>. The hero
+// markup lives in _byrne-hero.qmd; the corner accents in
+// _byrne-includes.html. The riso grain filter is applied to the images
+// via a <style> block in _byrne-includes.html (see note there).
+
+// Homepage hero composition.
+.byrne-hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(0.75rem, 3vw, 2.25rem);
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.75rem;
+  max-width: 820px;
+}
+.byrne-hero .byrne-figure { flex: 0 0 auto; }
+// Normalise the differing native aspect ratios to a common height.
+.byrne-hero .byrne-figure img {
+  height: clamp(120px, 18vw, 180px);
+  width: auto;
+  display: block;
+}
+
+// Small fixed corner accents site-wide, echoing the book-cover grid.
+// Kept low-opacity and pointer-transparent so they never compete with
+// content; hidden on narrow screens.
+.byrne-corner {
+  position: fixed;
+  z-index: 0;
+  width: 92px;
+  height: 92px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+.byrne-corner img { width: 100%; height: 100%; object-fit: contain; }
+.byrne-corner--tr { top: 66px;  right: 18px; }
+.byrne-corner--bl { bottom: 18px; left: 18px; }
+
+@media (max-width: 991.98px) {
+  .byrne-corner { display: none; }
+}
+
+// Make sure real content paints above the decorative corners.
+#quarto-content, .navbar, footer { position: relative; z-index: 1; }

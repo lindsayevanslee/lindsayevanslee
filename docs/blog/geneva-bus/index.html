@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-0b6595c33527b2873c98b9871949d591.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-9145a86bc2db2236c071e341f809da7a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,7 +74,6 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sen&amp;display=swap">
 
 
-<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -296,6 +295,50 @@ Number of Fisher Scoring iterations: 6</code></pre>
 </section>
 
 </main> <!-- /main -->
+<!--
+  Injected site-wide via _quarto.yml `include-after-body`.
+  Holds (1) the shared risograph grain filter applied to every figure,
+  (2) the CSS that applies it to figure images, and (3) two faint corner
+  accents (genuine Byrne figures). All decorative => aria-hidden.
+
+  NOTE on the grain CSS: it lives here in a <style> block rather than in
+  byrne.scss on purpose. Quarto's theme-CSS dependency scanner mis-reads a
+  `url(#byrne-riso)` in compiled CSS as a missing file; a <style> in an
+  include-after-body file is not scanned, so the SVG-filter reference is safe.
+-->
+
+<!-- Shared riso grain filter (zero-size, just provides the <defs>) -->
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="byrne-riso" x="-5%" y="-5%" width="110%" height="110%">
+      <!-- fine fractal noise -> dark speckle, clipped to the figure shape -->
+      <feturbulence type="fractalNoise" basefrequency="0.9" numoctaves="2" stitchtiles="stitch" result="noise"></feturbulence>
+      <fecolormatrix in="noise" type="matrix" values="0 0 0 0 0
+                0 0 0 0 0
+                0 0 0 0 0
+                0 0 0 0.09 0" result="grain"></fecolormatrix>
+      <fecomposite in="grain" in2="SourceGraphic" operator="in" result="grainClipped"></fecomposite>
+      <femerge>
+        <femergenode in="SourceGraphic"></femergenode>
+        <femergenode in="grainClipped"></femergenode>
+      </femerge>
+    </filter>
+  </defs>
+</svg>
+
+<style>
+  /* subtle riso grain over the genuine Byrne figures (hero + corners) */
+  .byrne-figure img { filter: url(#byrne-riso); }
+</style>
+
+<!-- Corner accents: genuine Byrne figures (1847, public domain).
+     Root-relative paths so they resolve on blog subpages too. -->
+<div class="byrne-corner byrne-corner--tr byrne-figure">
+  <img src="../../images/byrne/byrne_63_red_angle.svg" alt="A solid red quarter-circle, Oliver Byrne's figure for a right angle from his Elements of Euclid.">
+</div>
+<div class="byrne-corner byrne-corner--bl byrne-figure">
+  <img src="../../images/byrne/blu_angle_left.svg" alt="A solid blue angle figure from Oliver Byrne's Elements of Euclid.">
+</div>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

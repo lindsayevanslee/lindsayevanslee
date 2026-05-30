@@ -1,0 +1,50 @@
+<!--
+  Injected site-wide via _quarto.yml `include-after-body`.
+  Holds (1) the shared risograph grain filter applied to every figure,
+  (2) the CSS that applies it to figure images, and (3) two faint corner
+  accents (genuine Byrne figures). All decorative => aria-hidden.
+
+  NOTE on the grain CSS: it lives here in a <style> block rather than in
+  byrne.scss on purpose. Quarto's theme-CSS dependency scanner mis-reads a
+  `url(#byrne-riso)` in compiled CSS as a missing file; a <style> in an
+  include-after-body file is not scanned, so the SVG-filter reference is safe.
+-->
+
+<!-- Shared riso grain filter (zero-size, just provides the <defs>) -->
+<svg width="0" height="0" aria-hidden="true" focusable="false"
+     style="position:absolute" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="byrne-riso" x="-5%" y="-5%" width="110%" height="110%">
+      <!-- fine fractal noise -> dark speckle, clipped to the figure shape -->
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2"
+                    stitchTiles="stitch" result="noise"/>
+      <feColorMatrix in="noise" type="matrix"
+        values="0 0 0 0 0
+                0 0 0 0 0
+                0 0 0 0 0
+                0 0 0 0.09 0" result="grain"/>
+      <feComposite in="grain" in2="SourceGraphic" operator="in"
+                   result="grainClipped"/>
+      <feMerge>
+        <feMergeNode in="SourceGraphic"/>
+        <feMergeNode in="grainClipped"/>
+      </feMerge>
+    </filter>
+  </defs>
+</svg>
+
+<style>
+  /* subtle riso grain over the genuine Byrne figures (hero + corners) */
+  .byrne-figure img { filter: url(#byrne-riso); }
+</style>
+
+<!-- Corner accents: genuine Byrne figures (1847, public domain).
+     Root-relative paths so they resolve on blog subpages too. -->
+<div class="byrne-corner byrne-corner--tr byrne-figure">
+  <img src="/images/byrne/byrne_63_red_angle.svg"
+       alt="A solid red quarter-circle, Oliver Byrne's figure for a right angle from his Elements of Euclid.">
+</div>
+<div class="byrne-corner byrne-corner--bl byrne-figure">
+  <img src="/images/byrne/blu_angle_left.svg"
+       alt="A solid blue angle figure from Oliver Byrne's Elements of Euclid.">
+</div>

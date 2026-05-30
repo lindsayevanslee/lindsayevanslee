@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="5 5 82 54" width="82" height="54">
+  <!-- Oliver Byrne's "red angle" (Elements of Euclid, 1847, public domain).
+       Traced from the Wikimedia Commons raster (File:Byrne 63 red angle.png):
+       vertex at the bottom-left, an obtuse ~110 deg opening, capped by a
+       circular arc (r~61) bulging to the upper right. Red = #ed1c24 (sampled
+       from the original). The figure is rotated ~3.7 deg from the raw trace
+       so the bottom edge is exactly horizontal; the viewBox is tightened to
+       the figure so it fills the corner box. -->
+  <path d="M24,58 L6.13,8.75 A61,61 0 0 1 86.13,58 Z" fill="#ed1c24"/>
+</svg>
